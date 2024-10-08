@@ -38,6 +38,7 @@ for i in range(1, n3+1):
 
 
 print(password_list)
+#Shuffling means making it out of order(not in sequence or any pattern.)
 random.shuffle(password_list)
 print(f"Password after shuffling: {password_list}")
 
