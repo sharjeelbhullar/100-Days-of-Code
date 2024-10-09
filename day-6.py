@@ -14,9 +14,10 @@
 # full_name(first_name, sur_name)
 
 
-
+#Total number of people
 num = int(input("Enter the total number of people in the group: "))
 age = []
+#Loop for taking entry of age from the user
 for i in range(0, num):
     entry = int(input("Enter your age: "))
     age.append(entry)
@@ -24,6 +25,7 @@ for i in range(0, num):
 print(age)
 
 ticket = 0
+#Function to check age and select the price of ticket
 def get_ticket_price(age):
     if age < 12 and age > 0:
         ticket = 5
@@ -38,6 +40,7 @@ def get_ticket_price(age):
         print("Please enter a valid age.")
 
 total_bill = 0
+#Function calling and making total bill of the ticket
 for i in age:
     total_bill += get_ticket_price(i)
 
