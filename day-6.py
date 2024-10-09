@@ -18,11 +18,9 @@
 num = int(input("Enter the total number of people in the group: "))
 age = []
 #Loop for taking entry of age from the user
-for i in range(0, num):
-    entry = int(input("Enter your age: "))
+for i in range(1, num+1):
+    entry = int(input(f"Enter the age of person {i}: "))
     age.append(entry)
-
-print(age)
 
 ticket = 0
 #Function to check age and select the price of ticket
@@ -44,4 +42,4 @@ total_bill = 0
 for i in age:
     total_bill += get_ticket_price(i)
 
-print(total_bill)
+print(f"Total cost for the group: ${total_bill}")
