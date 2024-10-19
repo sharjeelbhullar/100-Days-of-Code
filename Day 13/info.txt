@@ -1,0 +1,4 @@
+I'm writing these notes for the reminder later so that I can easily access it and remind the work I have done in the past.
+If you got any error just google it and checkout whether if that error is particularly faced by the people in the past. It is most probably people have faced it or solved it earlier in the past already. Then it's easy for you to get an idea from there and resolve it.
+If you want to ignore an exception you can use the method written in main file of day 13.
+One more thing always try to check out whether your code is working or not? You have to print your program from scratch even at a minor level so that you can't get a bunch of errors later at the end of the completion of file.
