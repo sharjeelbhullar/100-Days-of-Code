@@ -22,26 +22,31 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
-choice1 = input("Enter your choice left or right: ")
-lChoice1 = choice1.lower()
-if lChoice1 == "left":
-    choice2 = input("Do you want to swim or wait? ")
+print("You're at a cross road. Where do you want to go?")
+choice1 = input('\tType \"left" or "right": \n')
+low_choice = choice1.lower()
+if low_choice == "left":
+    print("You've come to a lake. There is an island in the middle of the lake.")
+    choice2 = input('\tType "wait" to wait for a boat. Type "swim" to swim across: \n')
     lChoice2 = choice2.lower()
     if lChoice2 == "wait":
-        choice3 = input("Please select your favourite color options are: Blue, Red and Yellow ")
+        print('You arrive at the island unharmed. There is a house with 3 doors.')
+        choice3 = input("\tOne red, one yellow and one blue. Which colour do you choose?\n")
         lChoice3 = choice3.lower()
         if lChoice3 == "yellow":
-            print("You win!")
-        elif lChoice3 == "blue" or lChoice3 == "red":
-            print("Game Over.")
+            print("You found the treasure! You Win!")
+        elif lChoice3 == "blue":
+            print("You enter a room of beasts. Game Over.")
+        elif lChoice3 == "red":
+            print("It's a room full of fire. Game Over.")
         else:
             print("Please enter a valid choice or check your spelling.")
     elif lChoice2 == "swim":
-        print("Game Over.")
+        print("You get attacked by an angry trout. Game Over.")
     else:
         print("Please enter a valid choice or check your spelling.")
-elif lChoice1 == "right":
-    print("Game Over.")
+elif low_choice == "right":
+    print("You fell into a hole. Game Over.")
 else:
     print("PLease enter a valid choice or check your spelling.")
 
